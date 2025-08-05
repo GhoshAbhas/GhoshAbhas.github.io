@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deutsche Bank Bond Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Deutsche Bank Bond Tracker</h1>
+  </header>
+
+  <div class="container">
+    <label for="filter">Show:</label>
+    <select id="filter" onchange="filterBonds()">
+      <option>All Bonds</option>
+      <option>Maturing in Next 5 Days</option>
+      <option>Matured in Last 5 Days</option>
+      <option>Client A</option>
+      <option>Client B</option>
+      <option>Client C</option>
+      <option>Client D</option>
+      <option>Client E</option>
+    </select>
+
+    <table id="bondTable">
+      <thead>
+        <tr>
+          <th>ISIN</th>
+          <th>Issuer</th>
+          <th>Counterparty</th>
+          <th>Maturity Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
